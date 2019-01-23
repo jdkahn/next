@@ -53,11 +53,11 @@ class Panel extends React.Component {
 
         return (
             <div className={cls} style={style} {...others}>
-                <div className={`${prefix}collapse-panel-title`} onClick={onClick}>
+                <div id="test" className={`${prefix}collapse-panel-title`} onClick={onClick}>
                     <Icon type="arrow-up" className={`${prefix}collapse-panel-icon`} />
                     {title}
                 </div>
-                <div className={`${prefix}collapse-panel-content`}>
+                <div id="test" className={`${prefix}collapse-panel-content`}>
                     {children}
                 </div>
             </div>
