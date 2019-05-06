@@ -85,4 +85,5 @@ gemini-report/
 *.iml
 *.log
 .DS_Store
+complexity-reports/
 
