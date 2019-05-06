@@ -9,6 +9,7 @@
         "max-statements": "off",
         "max-len": "off",
         "no-unused-vars": 1,
-        "import/prefer-default-export": 0
+        "import/prefer-default-export": 0,
+        "complexity": ["warn", 5]
     }
 }

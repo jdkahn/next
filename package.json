@@ -50,7 +50,8 @@
     "commitmsg": "commitlint -E GIT_PARAMS",
     "precommit": "lint-staged",
     "changelog": "node ./scripts/changelog.js",
-    "prepub": "npm run eslint && npm run stylelint && npm run changelog && npm run build && npm run check &&  npm run docs && npm run pack && npm run pack -- minimize"
+    "prepub": "npm run eslint && npm run stylelint && npm run changelog && npm run build && npm run check &&  npm run docs && npm run pack && npm run pack -- minimize",
+    "complexity": "node ./scripts/analysis/complexity './src/**/!(style).@(js|jsx)'"
   },
   "lint-staged": {
     "@(src|scripts|docs/*/demo)/**/*.@(js|jsx)": [
@@ -126,6 +127,7 @@
     "html5shiv": "^3.7.3",
     "husky": "^0.14.3",
     "inquirer": "^6.1.0",
+    "json-2-csv": "^3.5.3",
     "jsonp": "^0.2.1",
     "karma": "^3.0.0",
     "karma-chrome-launcher": "^2.2.0",
@@ -169,6 +171,7 @@
     "stylelint": "^9.2.1",
     "stylelint-scss": "^3.1.1",
     "typescript": "^3.0.1",
+    "typhonjs-escomplex": "^0.1.0",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.x",
     "whatwg-fetch": "^2.0.3"
